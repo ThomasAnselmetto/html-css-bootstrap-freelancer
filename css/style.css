@@ -1,0 +1,49 @@
+/* reset */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* debug */
+.blue {
+    height: 10rem;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+.light-blue {
+    height: 10rem;
+    background-color: rgb(92, 163, 161);
+    border: 1px solid black;
+}
+
+
+
+.header {
+    height: 10rem;
+    background-color: blue;
+}
+
+.star-bootstrap {}
+
+
+/* header */
+
+.logo {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+
+/* star-bootstrap */
+.about {
+    background-color: #1ABC9C;
+    height: 5rem;
+    border: 1px solid black;
+}
