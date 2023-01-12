@@ -47,3 +47,12 @@ a {
     height: 5rem;
     border: 1px solid black;
 }
+
+.scuro {
+    background-color: #3A546D;
+}
+
+
+.more-scuro {
+    background-color: #2C3E50;
+}
