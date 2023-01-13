@@ -63,3 +63,7 @@ a {
 .box {
     height: 10rem;
 }
+
+.link-list {
+    justify-content: end;
+}
