@@ -84,7 +84,7 @@
         <h1 class="white">Start BOOTSTRAP</h1>
 
 
-        <div class="box box-icon white"><i class="fa-solid fa-star white"></i></div>
+        <div class="box box-icon my-3 white"><i class="fa-solid fa-star white"></i></div>
 
 
         <ul class="d-flex gap p-4 white">
@@ -102,7 +102,7 @@
                     <h1>
                         PORTFOLIO
                     </h1>
-                    <div class="box box-icon">
+                    <div class="box box-icon my-3">
                         <i class="fa-solid fa-star"></i>
                     </div>
                 </div>
@@ -154,25 +154,29 @@
                         <h1 class="white">
                             ABOUT
                         </h1>
-                        <div class="box box-icon white">
+                        <div class="box box-icon my-3 white">
                             <i class="fa-solid fa-star white"></i>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-10 col-md-5">
-                        <div class="box about"></div>
+                        <div class="box about white">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minus repellendus animi
+                                fugiat nobis, labore explicabo eos ad quo aspernatur, nesciunt ex saepe quas ut.</p>
+                        </div>
                     </div>
-                    <div class="col-10">
-                        <div class="box about"></div>
+                    <div class="col-10 col-md-5">
+                        <div class="box about white">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minus repellendus animi
+                                fugiat nobis, labore explicabo eos ad quo aspernatur, nesciunt ex saepe quas ut.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
                     <div class="col-auto">
-                        <button type="button">
-                            Download
-                        </button>
+                        <button class="glow-on-hover my-3" type="button">Download Our Program!!!</button>
                     </div>
                 </div>
             </div>
@@ -186,7 +190,7 @@
                     <h1>
                         CONTACT ME
                     </h1>
-                    <div class="box box-icon mb-3">
+                    <div class="box box-icon my-3 mb-3">
                         <i class="fa-solid fa-star"></i>
                     </div>
                 </div>
@@ -195,23 +199,26 @@
 
             <form action="https:tizianonicolai.com/lezioni/form-printer" method="GET"
                 class="row justify-content-center">
-                <div class="col-10">
-                    <input type="text">
+
+                <div class="col-10 py-1">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" method="get" placeholder="Il tuo nome..." required>
                 </div>
-                <div class="col-10">
-                    <input type="text">
+                <div class="col-10 py-1">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" method="get" placeholder="La tua mail" required>
                 </div>
-                <div class="col-10">
-                    <input type="text">
+                <div class="col-10 py-1">
+                    <label for="tel">N. telefono</label>
+                    <input type="tel" name="phone-number" method="get" placeholder="Il tuo telefono" required>
                 </div>
-                <div class="col-10">
-                    <input type="text">
+                <div class="col-10 py-1">
+                    <label for="text-area">Chi sei?</label>
+                    <textarea name="" id="" cols="30" rows="6" method="get"
+                        placeholder="Scrivi qualcosa di te..."></textarea>
                 </div>
-                <div class="col-10">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="col-10">
-                    <input type="submit" value="">
+                <div class="col-10 py-1">
+                    <input type="submit" value="Invia!" method="get">
                 </div>
             </form>
 
@@ -219,23 +226,33 @@
     </section>
 
 
-
-
-
-
-
-    <footer class="row scuro ">
+    <footer class="scuro ">
         <div class="container">
 
-            <div>
-                <div class="col-12 col-md-4">
-                    <div class="box"></div>
+            <div class="row text-center white">
+                <div class="col-12 col-md-4 my-2 ">
+                    <div class="box">
+                        <h4>LOCATION</h4>
+                        <p>2215 John Daniel Drive Clark,<br>MO 54243</p>
+                    </div>
                 </div>
-                <div class="col-12 col-md-4">
-                    <div class="box"></div>
+                <div class="col-12 col-md-4 my-2">
+                    <div class="box">
+                        <h4>AROUND THE WEB</h4>
+                        <div class="d-flex justify-content-evenly py-1">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-google-plus-g"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-4">
-                    <div class="box"></div>
+                <div class="col-12 col-md-4 my-2">
+                    <div class="box">
+                        <h4>ABOUT FREELANCER</h4>
+                        <p>Freelance is a free to use,open source Bootstrap theme created by <span><a href="#">Start
+                                    Bootstrap</a></span></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -251,6 +268,11 @@
             </div>
         </div>
     </footer>
+
+
+
+
+
 
 
 

@@ -23,13 +23,17 @@ img {
     width: 100%;
 }
 
+.fa-solid {
+    font-size: 1.5rem;
+}
+
 .box-icon::before {
     display: inline-block;
     position: absolute;
-    left: 111px;
-    top: 12px;
+    left: 95px;
+    top: 13px;
     content: "";
-    height: 3px;
+    height: 4px;
     width: 25%;
     background-color: black;
     margin-bottom: 2rem;
@@ -38,10 +42,10 @@ img {
 .box-icon::after {
     display: inline-block;
     position: absolute;
-    right: 111px;
-    top: 12px;
+    right: 95px;
+    top: 13px;
     content: "";
-    height: 3px;
+    height: 4px;
     width: 25%;
     background-color: black;
     margin-bottom: 2rem;
@@ -50,10 +54,10 @@ img {
 .box-icon.white::before {
     display: inline-block;
     position: absolute;
-    left: 111px;
-    top: 12px;
+    left: 95px;
+    top: 13px;
     content: "";
-    height: 3px;
+    height: 4px;
     width: 25%;
     background-color: white;
     margin-bottom: 2rem;
@@ -62,10 +66,10 @@ img {
 .box-icon.white::after {
     display: inline-block;
     position: absolute;
-    right: 111px;
-    top: 12px;
+    right: 95px;
+    top: 13px;
     content: "";
-    height: 3px;
+    height: 4px;
     width: 25%;
     background-color: white;
     margin-bottom: 2rem;
@@ -89,10 +93,6 @@ img {
 }
 
 /* star-bootstrap */
-.about {
-    height: 5rem;
-    border: 1px solid black;
-}
 
 .scuro {
     min-height: 100px;
@@ -112,4 +112,102 @@ img {
 
 #jumbotron {
     padding-top: 100px;
+}
+
+label {
+    display: block;
+
+}
+
+input {
+    width: 100%;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+textarea {
+    width: 100%;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+input:focus {
+    background-color: #ff7300;
+    border-radius: 5px;
+}
+
+span {
+    color: #1DB398
+}
+
+/* buttons rules */
+
+.glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
