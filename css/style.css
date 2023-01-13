@@ -13,18 +13,61 @@ h1 {
     margin: 2rem 0;
 }
 
+.box-icon {
+    width: 500px;
+    position: relative;
+
+}
+
+.box-icon::before {
+    display: inline-block;
+    position: absolute;
+    left: 111px;
+    top: 12px;
+    content: "";
+    height: 3px;
+    width: 25%;
+    background-color: black;
+    margin-bottom: 2rem;
+}
+
+.box-icon::after {
+    display: inline-block;
+    position: absolute;
+    right: 111px;
+    top: 12px;
+    content: "";
+    height: 3px;
+    width: 25%;
+    background-color: black;
+    margin-bottom: 2rem;
+}
+
+.box-icon.white::before {
+    display: inline-block;
+    position: absolute;
+    left: 111px;
+    top: 12px;
+    content: "";
+    height: 3px;
+    width: 25%;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.box-icon.white::after {
+    display: inline-block;
+    position: absolute;
+    right: 111px;
+    top: 12px;
+    content: "";
+    height: 3px;
+    width: 25%;
+    background-color: white;
+    margin-bottom: 2rem;
+}
 
 /* debug */
-
-
-
-
-
-section {
-    min-height: 100px;
-    background-color: beige;
-    border: 2px solid black;
-}
 
 
 /* header */
